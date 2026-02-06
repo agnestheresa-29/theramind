@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="id" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    body {
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    .gallery-item {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+    .fade-in {
+      animation: fadeIn 0.6s ease-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full">
+ <div
+  id="app-container"
+  class="w-full h-full overflow-auto backdrop-blur-xl"
+  style="
+    background:
+      linear-gradient(135deg, rgba(102,126,234,0.7), rgba(211, 205, 9, 0.7)),
+      url('img2.jpeg');
+    background-size: cover;
+    background-position: center;
+  ">
+
+    
+    <!-- Header Section -->
+   <header class="text-center py-16 px-6 fade-in">
+    <div class="max-w-4xl mx-auto">
+    
+
+<div
+  class="w-32 h-32 mx-auto mb-6 rounded-full flex items-center justify-center overflow-hidden"
+  style="background: rgba(255,255,255,0.2); backdrop-filter: blur(10px);"
+>
+  <img
+    src="img4.jpeg"
+    alt="Foto"
+    class="w-full h-full object-cover"
+  />
+</div>
+
+
+
+
+
+
+     <h1 id="portfolio-name" class="text-5xl md:text-6xl font-bold text-white mb-4">Agnes Theresa</h1>
+     <p id="portfolio-profession" class="text-xl md:text-2xl text-white opacity-90 mb-4">Photographer &amp; Visual Artist</p>
+     <p id="portfolio-bio" class="text-lg text-white opacity-80 max-w-2xl mx-auto leading-relaxed">Menangkap momen indah dan mengubahnya menjadi kenangan abadi. Spesialisasi dalam portrait, landscape, dan street photography.</p>
+    </div>
+   </header><!-- Gallery Section -->
+   <section class="px-6 pb-16">
+    <div class="max-w-7xl mx-auto">
+     <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">Galeri Foto</h2>
+     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+        <!-- Photo 1 -->
+      <div class="gallery-item rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px);">
+<div class="aspect-square cursor-pointer">
+  <img
+    src="img.jpeg"
+    class="w-full h-full object-cover  gallery-image cursor-pointer"
+    alt=""/>
+</div>
+
+       <div class="p-5">
+        <h3 class="text-xl font-semibold text-white mb-2">Golden Hour</h3>
+        <p class="text-white opacity-80">Sunset di pantai selatan</p>
+       </div>
+      </div>
+      
+      
+      
+      <!-- Photo 2 -->
+      <div class="gallery-item rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px);">
+      <div class="aspect-square">
+  <img
+    src="img1.jpeg"
+    class="w-full h-full object-cover"
+    alt=""
+  />
+</div>
+       <div class="p-5">
+        <h3 class="text-xl font-semibold text-white mb-2">Mountain Peak</h3>
+        <p class="text-white opacity-80">Puncak gunung di pagi hari</p>
+       </div>
+      </div>
+      
+      
+      
+      <!-- Photo 3 -->
+      <div class="gallery-item rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px);">
+       <div class="aspect-square flex items-center justify-center text-7xl" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+        🌸
+       </div>
+       <div class="p-5">
+        <h3 class="text-xl font-semibold text-white mb-2">Spring Blossom</h3>
+        <p class="text-white opacity-80">Bunga sakura bermekaran</p>
+       </div>
+      </div><!-- Photo 4 -->
+      <div class="gallery-item rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px);">
+       <div class="aspect-square flex items-center justify-center text-7xl" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+        🏙️
+       </div>
+       <div class="p-5">
+        <h3 class="text-xl font-semibold text-white mb-2">City Lights</h3>
+        <p class="text-white opacity-80">Kehidupan malam kota</p>
+       </div>
+      </div><!-- Photo 5 -->
+      <div class="gallery-item rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px);">
+       <div class="aspect-square flex items-center justify-center text-7xl" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+        🌊
+       </div>
+       <div class="p-5">
+        <h3 class="text-xl font-semibold text-white mb-2">Ocean Wave</h3>
+        <p class="text-white opacity-80">Ombak di laut lepas</p>
+       </div>
+      </div><!-- Photo 6 -->
+      <div class="gallery-item rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px);">
+       <div class="aspect-square flex items-center justify-center text-7xl" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+        🦋
+       </div>
+       <div class="p-5">
+        <h3 class="text-xl font-semibold text-white mb-2">Butterfly</h3>
+        <p class="text-white opacity-80">Kupu-kupu di taman</p>
+       </div>
+      </div><!-- Photo 7 -->
+      <div class="gallery-item rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px);">
+       <div class="aspect-square flex items-center justify-center text-7xl" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
+        ☕
+       </div>
+       <div class="p-5">
+        <h3 class="text-xl font-semibold text-white mb-2">Coffee Time</h3>
+        <p class="text-white opacity-80">Secangkir kopi pagi</p>
+       </div>
+      </div><!-- Photo 8 -->
+      <div class="gallery-item rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px);">
+       <div class="aspect-square flex items-center justify-center text-7xl" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+        🎨
+       </div>
+       <div class="p-5">
+        <h3 class="text-xl font-semibold text-white mb-2">Art Studio</h3>
+        <p class="text-white opacity-80">Seni di dalam studio</p>
+       </div>
+      </div>
+      
+      
+      <!-- Photo 9 -->
+      <div class="gallery-item rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px);">
+       <div class="aspect-square flex items-center justify-center text-7xl" style="background: linear-gradient(135deg, #ff6e7f 0%, #bfe9ff 100%);">
+        🌙
+       </div>
+       <div class="p-5">
+        <h3 class="text-xl font-semibold text-white mb-2">Moonlight</h3>
+        <p class="text-white opacity-80">Cahaya bulan malam</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   
+
+
+
+
+   
+   
+   
+   
+   <!-- Contact Section -->
+   <section class="px-6 py-16" style="background: rgba(0,0,0,0.2);">
+    <div class="max-w-4xl mx-auto text-center">
+     <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">Media Sosial</h2>
+     <div class="flex flex-wrap justify-center gap-6 mb-8">
+      <div class="flex items-center gap-3 px-6 py-3 rounded-full" style="background: rgba(255,255,255,0.2); backdrop-filter: blur(10px);"><span class="text-2xl">📧</span> <span id="contact-email" class="text-white font-medium">@imresa._</span>
+      </div>
+      <div class="flex items-center gap-3 px-6 py-3 rounded-full" style="background: rgba(255,255,255,0.2); backdrop-filter: blur(10px);"><span class="text-2xl">📱</span> <span id="contact-instagram" class="text-white font-medium">@alexphotography</span>
+      </div>
+     </div>
+     <p class="text-white opacity-80">Tersedia untuk proyek freelance dan kolaborasi kreatif</p>
+    </div>
+   </section><!-- Footer -->
+   <footer class="text-center py-8 px-6">
+    <p class="text-white opacity-70">© 2024 - Dibuat dengan ❤️</p>
+   </footer>
+  </div>
+  <script>
+    const defaultConfig = {
+      name: 'Alex Photography',
+      profession: 'Photographer & Visual Artist',
+      bio: 'Menangkap momen indah dan mengubahnya menjadi kenangan abadi. Spesialisasi dalam portrait, landscape, dan street photography.',
+      email: 'alex@photography.com',
+      instagram: '@alexphotography',
+      background_start: '#667eea',
+      background_end: '#764ba2',
+      card_bg: 'rgba(255,255,255,0.15)',
+      text_color: '#ffffff',
+      accent_color: '#ffd700',
+      font_family: 'Poppins',
+      font_size: 16
+    };
+
+    let config = { ...defaultConfig };
+
+    async function onConfigChange(cfg) {
+      config = { ...defaultConfig, ...cfg };
+      
+      const customFont = config.font_family || defaultConfig.font_family;
+      const baseSize = config.font_size || defaultConfig.font_size;
+      
+      // Update background gradient
+      document.getElementById('app-container').style.background = 
+        `linear-gradient(135deg, ${config.background_start} 0%, ${config.background_end} 100%)`;
+      
+      // Update text content
+      document.getElementById('portfolio-name').textContent = config.name;
+      document.getElementById('portfolio-profession').textContent = config.profession;
+      document.getElementById('portfolio-bio').textContent = config.bio;
+      document.getElementById('contact-email').textContent = config.email;
+      document.getElementById('contact-instagram').textContent = config.instagram;
+      
+      // Update font family
+      document.body.style.fontFamily = `${customFont}, 'Poppins', sans-serif`;
+      
+      // Update font sizes
+      const h1Elements = document.querySelectorAll('h1');
+      h1Elements.forEach(el => el.style.fontSize = `${baseSize * 3}px`);
+      
+      const h2Elements = document.querySelectorAll('h2');
+      h2Elements.forEach(el => el.style.fontSize = `${baseSize * 2}px`);
+      
+      const h3Elements = document.querySelectorAll('h3');
+      h3Elements.forEach(el => el.style.fontSize = `${baseSize * 1.25}px`);
+      
+      const pElements = document.querySelectorAll('p');
+      pElements.forEach(el => el.style.fontSize = `${baseSize}px`);
+    }
+
+    function mapToCapabilities(cfg) {
+      return {
+        recolorables: [
+          {
+            get: () => cfg.background_start || defaultConfig.background_start,
+            set: (value) => {
+              cfg.background_start = value;
+              window.elementSdk.setConfig({ background_start: value });
+            }
+          },
+          {
+            get: () => cfg.background_end || defaultConfig.background_end,
+            set: (value) => {
+              cfg.background_end = value;
+              window.elementSdk.setConfig({ background_end: value });
+            }
+          },
+          {
+            get: () => cfg.text_color || defaultConfig.text_color,
+            set: (value) => {
+              cfg.text_color = value;
+              window.elementSdk.setConfig({ text_color: value });
+            }
+          }
+        ],
+        borderables: [],
+        fontEditable: {
+          get: () => cfg.font_family || defaultConfig.font_family,
+          set: (value) => {
+            cfg.font_family = value;
+            window.elementSdk.setConfig({ font_family: value });
+          }
+        },
+        fontSizeable: {
+          get: () => cfg.font_size || defaultConfig.font_size,
+          set: (value) => {
+            cfg.font_size = value;
+            window.elementSdk.setConfig({ font_size: value });
+          }
+        }
+      };
+    }
+
+    function mapToEditPanelValues(cfg) {
+      return new Map([
+        ['name', cfg.name || defaultConfig.name],
+        ['profession', cfg.profession || defaultConfig.profession],
+        ['bio', cfg.bio || defaultConfig.bio],
+        ['email', cfg.email || defaultConfig.email],
+        ['instagram', cfg.instagram || defaultConfig.instagram]
+      ]);
+    }
+
+    // Initialize Element SDK
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities,
+        mapToEditPanelValues
+      });
+    }
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9c621b3a151b2925',t:'MTc2OTc4ODAzMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+ 
+  
+ 
+ </body>
+</html>
